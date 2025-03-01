@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24656734166",
+    "project_id": "bookstore-b58cd",
+    "storage_bucket": "bookstore-b58cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24656734166:android:3edf5bcf4c6023f3fd6677",
+        "android_client_info": {
+          "package_name": "com.flutter.bookapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDijRRn65hbgKQ5IUjRYK_Eqoes1_CwrFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

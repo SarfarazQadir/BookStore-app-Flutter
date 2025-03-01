@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0' // Ensure compatibility with Gradle version 8.x
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Set the build directory for the root project and subprojects
+rootProject.buildDir = "../build"
+
+subprojects {
+    // Set the build directory for each subproject
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    // Ensure evaluation happens in the app project before others
+    project.evaluationDependsOn(":app")
+}
+
+// Define the clean task to remove the build directory
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
